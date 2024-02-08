@@ -1,49 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulário de Login e Cadastro</title>
-  <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Formulário de Login e Cadastro</title>
+   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container" id="loginContainer">
-  <form id="loginForm">
-    <label for="loginEmail">Email:</label>
-    <input type="email" id="loginEmail" name="email" required>
+   <div class="container" id="loginContainer">
+      <div class="text">
+         Formulario de Login
+      </div>
+      <form id="loginForm">
+         <div class="form-row">
+            <div class="input-data">
+               <input type="" id="email" name="email" required>
+               <div class="underline"></div>
+               <label for="email">Email</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <div class="underline"></div>
+               <input type="password" id="password" name="password" required>
+               <label for="password">Senha:</label>
+            </div>
+         </div>
 
-    <label for="loginPassword">Senha:</label>
-    <input type="password" id="loginPassword" name="password" required>
+         <div class="form-row submit-btn">
+            <div class="input-data">
+               <button class="inner" type="button" onclick="validateForm('login')">Entrar</button>
+            </div>
+            <p class="switch-form">Não tem uma conta? <a href="#" onclick="switchForm('cadastro')">Cadastre-se</a></p>
+         </div>
+      </form>
+   </div>
 
-    <button type="button" onclick="validateLoginForm()">Entrar</button>
-    <p class="switch-form">Não tem uma conta? <a href="#" onclick="switchForm('cadastro')">Cadastre-se</a></p>
-  </form>
-</div>
 
-<div class="container" id="cadastroContainer" style="display: none;">
-  <form id="cadastroForm">
-    <label for="cadastroName">Nome:</label>
-    <input type="text" id="cadastroName" name="name" required>
+   <div class="container" id="cadastroContainer" style="display: none;">
+      <div class="text">
+         Formulario de Cadastro
+      </div>
+      
+      <form id="cadastroForm">
+         <div class="form-row">
+            <div class="input-data">
+               <input type="" id="name" name="name" required>
+               <div class="underline"></div>
+               <label for="name">Nome</label>
+            </div>
 
-    <label for="cadastroEmail">Email:</label>
-    <input type="email" id="cadastroEmail" name="email" required>
+            <div class="input-data">
+               <input type="" id="cademail" name="email" required>
+               <div class="underline"></div>
+               <label for="email">Email</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="" id="phone" name="phone" required>
+               <div class="underline"></div>
+               <label for="phone">Telefone</label>
+            </div>
 
-    <label for="cadastroPhone">Telefone:</label>
-    <input type="tel" id="cadastroPhone" name="phone" required>
+            <div class="input-data">
+               <input type="" id="cpf" name="cpf" required>
+               <div class="underline"></div>
+               <label for="cpf">CPF</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="password" id="cadpassword" name="password" required>
+               <div class="underline"></div>
+               <label for="password">Senha</label>
+            </div>
+         </div>
+         <div class="form-row submit-btn">
+            <div class="input-data">
+               <button class="inner" type="button" onclick="validateForm('register')">Cadastrar</button>
+            </div>
+            <p class="switch-form">Já tem uma conta? <a href="#" onclick="switchForm('login')">Fazer Login</a></p>
+         </div>
+   </div>
 
-    <label for="cadastroCPF">CPF:</label>
-    <input type="text" id="cadastroCPF" name="cpf" required>
+   </div>
+   </form>
+   </div>
 
-    <label for="cadastroPassword">Senha:</label>
-    <input type="password" id="cadastroPassword" name="password" required>
-
-    <button type="button" onclick="validateCadastroForm()">Cadastrar</button>
-    <p class="switch-form">Já tem uma conta? <a href="#" onclick="switchForm('login')">Faça login</a></p>
-  </form>
-</div>
-
-<script src="script.js"></script>
+   <script src="script.js"></script>
 
 </body>
+
 </html>
