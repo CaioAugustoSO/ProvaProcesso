@@ -61,15 +61,13 @@
          </div>
          <div class="form-row">
             <div class="input-data">
-               <input type="" id="phone" name="phone" required>
-               <div class="underline"></div>
+               <input type="tel" id="phone" name="phone" oninput="maskPhone(this)" required>               <div class="underline"></div>
                <label for="phone">Telefone</label>
             </div>
 
             <div class="input-data">
-               <input type="" id="cpf" name="cpf" required>
-               <div class="underline"></div>
                <label for="cpf">CPF</label>
+               <input type="text" id="cpf" name="cpf" oninput="maskCPF(this)" required>               <div class="underline"></div>
             </div>
          </div>
          <div class="form-row">
