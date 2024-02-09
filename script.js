@@ -13,24 +13,26 @@ function validateForm(type) {
     if (!emailRegex.test(cademail)) {
       alert('Por favor, insira um endereço de email válido.');
     }
-    else{ 
-    if (name && cademail && cadpassword) {
-      alert('Cadastro realizado!\nNome: ' + name + '\nEmail: ' + cademail + '\nSenha: ' + cadpassword);
-    } else {
-      alert('Por favor, preencha todos os campos do formulário de cadastro.');
+    else {
+      if (name && cademail && cadpassword) {
+        alert('Cadastro realizado!\nNome: ' + name + '\nEmail: ' + cademail + '\nSenha: ' + cadpassword);
+      } else {
+        alert('Por favor, preencha todos os campos do formulário de cadastro.');
+      }
     }
   }
-} 
-else if (type === 'login') {
-    // Lógica de login
+  else if (type === 'login') {
 
-    if (email && password) {
-      if (!emailRegex.test(email)) {
-        alert('Por favor, insira um endereço de email válido.');
+    if (!emailRegex.test(email)) {
+      alert('Por favor, insira um endereço de email válido.');
+    }
+    else {
+      if (email && password) {
+
+        alert('Login validado!\nEmail: ' + email + '\nSenha: ' + password);
+      } else {
+        alert('Por favor, preencha todos os campos do formulário de login.');
       }
-      alert('Login validado!\nEmail: ' + email + '\nSenha: ' + password);
-    } else {
-      alert('Por favor, preencha todos os campos do formulário de login.');
     }
   }
 }
