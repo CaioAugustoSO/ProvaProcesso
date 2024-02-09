@@ -1,0 +1,1 @@
+Como eu fiz em html,css e js estático, puro só abrir o index.html e está feito no código eu uso como base o estilo desse link: https://codepen.io/Metty/pen/NWpzexj. No código uso o máximo de negação, pois ao programar eu uso o dilema do viajante, onde assim que eu souber o caminho errado, posso ignorar o fato de o que estará nos outros
